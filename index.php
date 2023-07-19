@@ -2,9 +2,14 @@
 $length = $_GET['length'] ?? '';
 $generatenewpassword = generatePassword($length);
 function generatePassword($length) {
-  $password = random_bytes($length);
-  var_dump($password);
-  return $password;
+  $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $randomPassword = '';
+ 
+    for ($i = 0; $i < $length; $i++) {
+        $index = rand(0, strlen($characters) - 1);
+        $randomPassword .= $characters[$index];
+    }
+    return $randomPassword;
 };
 
 ?>
