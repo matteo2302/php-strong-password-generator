@@ -1,12 +1,12 @@
 <?php 
 $length = $_GET['length'] ?? '';
-generatePassword($length);
+$generatenewpassword = generatePassword($length);
 function generatePassword($length) {
-  $password = random_bytes(int $length);
+  $password = random_bytes($length);
   var_dump($password);
   return $password;
 };
-$generatenewpassword = $password
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
