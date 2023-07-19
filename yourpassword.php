@@ -1,5 +1,6 @@
 <?php
-echo 'chiao'
+session_start();
+$generatenewpassword =  $_SESSION['generatenewpassword'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +10,6 @@ echo 'chiao'
   <title>Document</title>
 </head>
 <body>
-  
+  <div>ciao</div>
 </body>
 </html>

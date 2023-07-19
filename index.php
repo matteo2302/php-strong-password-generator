@@ -1,6 +1,11 @@
 <?php 
 $length = $_GET['length'] ?? '';
 include 'function.php';
+if ($generatenewpassword) {
+  session_start();
+  $_SESSION['generatenewpassword'] = $generatenewpassword;
+  header ('Location : yourpassword.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +21,7 @@ include 'function.php';
     <label for="exampleInputPassword1" class="form-label">scegli il numero di caratteri</label>
     <input type="number" class="form-control" id="exampleInputPassword1" name="length">
   </div>
-  <button type="submit" class="btn btn-primary" <?php header('Location : yourpassword.php') ?>>Crea</button>
+  <button type="submit" class="btn btn-primary">Crea</button>
 </form>
 </body>
 </html>
