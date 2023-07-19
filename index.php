@@ -1,4 +1,5 @@
 <?php 
+include 'function.php'
 $length = $_GET['length'] ?? '';
 generatePassword($length);
 function generatePassword($length) {
