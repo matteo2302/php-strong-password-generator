@@ -6,7 +6,7 @@ function generatePassword($lenght) {
   var_dump($password);
   return $password;
 };
-$password = generatePassword;
+$generatenewpassword = $password
 ?>
 <!DOCTYPE html>
 <html lang="en">
