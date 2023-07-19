@@ -16,7 +16,7 @@ include 'function.php';
     <label for="exampleInputPassword1" class="form-label">scegli il numero di caratteri</label>
     <input type="number" class="form-control" id="exampleInputPassword1" name="length">
   </div>
-  <button type="submit" class="btn btn-primary">Crea</button>
+  <button type="submit" class="btn btn-primary" <?php header('Location : yourpassword.php') ?>>Crea</button>
 </form>
 </body>
 </html>
