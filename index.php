@@ -1,11 +1,12 @@
-<?php $lenght = $_GET['lenght'] ?? '';
-$password = generatePassword ($lenght);
-function generatePassword (lenght){
-  $password = random_bytes(length);
-  var_dump[$password];
-  return
-}
-
+<?php 
+$lenght = $_GET['lenght'] ?? '';
+generatePassword($lenght);
+function generatePassword($lenght) {
+  $password = random_bytes($lenght);
+  var_dump($password);
+  return $password;
+};
+$password = generatePassword;
 ?>
 <!DOCTYPE html>
 <html lang="en">
