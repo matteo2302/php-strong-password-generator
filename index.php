@@ -1,8 +1,8 @@
 <?php 
-$lenght = $_GET['lenght'] ?? '';
-generatePassword($lenght);
-function generatePassword($lenght) {
-  $password = random_bytes($lenght);
+$length = $_GET['length'] ?? '';
+generatePassword($length);
+function generatePassword($length) {
+  $password = random_bytes(int $length);
   var_dump($password);
   return $password;
 };
@@ -20,7 +20,7 @@ $generatenewpassword = $password
 <form>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">scegli il numero di caratteri</label>
-    <input type="number" class="form-control" id="exampleInputPassword1" name="lenght">
+    <input type="number" class="form-control" id="exampleInputPassword1" name="length">
   </div>
   <button type="submit" class="btn btn-primary">Crea</button>
 </form>
